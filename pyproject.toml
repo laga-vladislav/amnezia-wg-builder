@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "amnezia-wg-builder"
+version = "0.1.0"
+description = ""
+authors = ["laga-vladislav <laga.ladislav@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "amnezia_wg_builder"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyqt6 = "^6.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
