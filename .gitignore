@@ -1,4 +1,5 @@
 /.venv
-__pychache__
+/.__pychache__
 *.vpn
+*.conf
 /.idea
