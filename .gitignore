@@ -3,3 +3,5 @@ __pychache__
 *.vpn
 *.conf
 .idea
+/__pycache__
+/.idea
