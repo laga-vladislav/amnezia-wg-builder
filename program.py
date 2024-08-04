@@ -165,7 +165,7 @@ class AmneziaWgBuilder:
         hostName, port = self.WIREGUARD_CONFIG_DATA['Peer']['Endpoint'].split(':')
         psk_key = self.WIREGUARD_CONFIG_DATA['Peer']["PresharedKey"]
         server_pub_key = self.WIREGUARD_CONFIG_DATA['Peer']['PublicKey']
-        PRIMARY_DNS, SECONDARY_DNS = self.WIREGUARD_CONFIG_DATA['Interface']['DNS'].split(', ')
+        PRIMARY_DNS, SECONDARY_DNS = self.WIREGUARD_CONFIG_DATA['Interface']['DNS'].split(',')
         last_config = (
             '{\n'
             '    "H1": "0",\n'

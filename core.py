@@ -1,11 +1,14 @@
 import json
+
 from PyQt6.QtCore import *
 
 
 def unpack(s):
-  ba = QByteArray(s[6:].encode())
-  ba = QByteArray.fromBase64(ba, QByteArray.Base64Option.Base64UrlEncoding | QByteArray.Base64Option.OmitTrailingEquals)
-  return str(qUncompress(ba), 'utf-8')
+    ba = QByteArray(s[6:].encode())
+    ba = QByteArray.fromBase64(ba,
+                               QByteArray.Base64Option.Base64UrlEncoding | QByteArray.Base64Option.OmitTrailingEquals)
+    return str(qUncompress(ba), 'utf-8')
+
 
 def pack(s):
     try:
